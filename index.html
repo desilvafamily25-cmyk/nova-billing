@@ -2,9 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+
     <title>NovaBody — Daily Billing</title>
+
+    <!-- PWA: manifest + install support -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- Mobile app-style display -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Status bar / theme colors -->
     <meta name="theme-color" content="#0f172a" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- Optional: app name on iOS install -->
+    <meta name="apple-mobile-web-app-title" content="NovaBody Billing" />
+
+    <!-- Optional: iOS icon fallback (uses your 192px icon) -->
+    <link rel="apple-touch-icon" href="/icon-192.png" />
   </head>
   <body class="bg-slate-50">
     <div id="root"></div>
