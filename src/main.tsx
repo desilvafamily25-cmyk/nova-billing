@@ -8,3 +8,12 @@ createRoot(document.getElementById('root')!).render(
     <App />
   </React.StrictMode>
 )
+
+// Register a minimal service worker for PWA install support
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker
+      .register('/sw.js')
+      .catch(console.error)
+  })
+}
